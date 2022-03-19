@@ -1,0 +1,134 @@
+.EMDTech-nav-bar {
+    display: flex;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+
+.EMDTech-nav-bar-links {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.EMDTech-navbar-logo {
+    margin-right: 2rem;
+}
+
+.EMDTech-navbar-logo img {
+    width: 62.56px;
+    height: 16.02px;
+}
+
+.EMDTech-nav-bar-container {
+    display: flex;
+    flex-direction: row ;
+}
+.EMDTech-nav-bar-menu-container-section {
+    display: flex;
+    flex-direction: column ;
+}
+.EMDTech-nav-bar-contact {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.EMDTech-nav-bar-container p,
+.EMDTech-nav-bar-menu-container-section p {
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    float: right;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.EMDTech-nav-bar-contact button,
+.EMDTech-nav-bar-menu-contact button {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: #FF4820;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.EMDTech-nav-bar-menu {
+    margin-left: 1rem;
+
+    display: none;
+    position: relative;
+}
+
+.EMDTech-nav-bar-menu svg {
+    cursor: pointer;
+}
+
+.EMDTech-nav-bar-menu-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
+}
+
+.EMDTech-nav-bar-menu-container p {
+    margin: 1rem 0;
+}
+
+.EMDTech-nav-bar-menu-contact {
+    display: none;
+}
+
+@media screen and (max-width: 1050px) {
+    .EMDTech-nav-bar-container {
+        display: none;
+    }
+
+    .EMDTech-nav-bar-menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .EMDTech-nav-bar {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .EMDTech-nav-bar {
+        padding: 2rem;
+    }
+
+    .EMDTech-nav-bar-contact {
+        display: none;
+    }
+
+    .EMDTech-nav-bar-menu-container {
+        top: 20px;
+    }
+
+    .EMDTech-nav-bar-menu-contact {
+        display: block;
+    }
+}
